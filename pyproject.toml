@@ -1,4 +1,15 @@
 [project]
 name = "maternity-benefit-settlement"
 version = "0.1.0"
+description = "生育待遇统一结算服务端核心：唯一案件、追加账本、冲正链、确定性日结"
 requires-python = ">=3.11"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
